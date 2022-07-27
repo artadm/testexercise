@@ -1,0 +1,33 @@
+.mysearch {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0 auto 2rem;
+    border: 2px solid #333;
+    transition: 0.2s linear;
+
+    &:hover {
+      border-color: #b2b2b2;
+     }
+    input {
+        font-size: 1rem;
+        width: 100%;
+        padding: 0.75rem 1.25rem;
+        color: #333;
+        border: none;
+     &::placeholder {
+        transition: 0.2s linear;
+        color: #b2b2b2;
+        opacity: 1;
+     }
+     &:focus::placeholder {
+        opacity: 0;
+     }
+     &:focus {
+      outline: none;
+     }
+    }
+
+
+}
